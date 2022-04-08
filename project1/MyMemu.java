@@ -146,19 +146,11 @@ public class MyMemu extends JFrame{
 
             void calcIdealBw() {
                 float sum = 22;
-                float IDBW;
-
+               
                 if (!txt1.getText().isEmpty()) {
                     sum *= (Double.parseDouble(txt1.getText()) * Double.parseDouble(txt1.getText()))/ 10000;//we must add this
                     
                 }
-//                if (!jtf2.getText().isEmpty()) {
-//                    sum += Integer.parseInt(jtf2.getText());//we must add this
-//                }
-//                if (!jtf3.getText().isEmpty()) {
-//                    sum -= Integer.parseInt(jtf3.getText());//we must subtract this
-//                }
-
                 txt4.setText(String.valueOf(sum));
             }
         };
